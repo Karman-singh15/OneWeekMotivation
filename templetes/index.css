@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background-color: rgb(15, 10, 1);
@@ -9,6 +10,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    background-image: url(https://i.pinimg.com/736x/40/95/23/4095239bd1f6b650666a7f54f2a94f93.jpg);
 }
 .poppins-medium {
     font-family: "Poppins", serif;
@@ -16,11 +18,8 @@ body{
     font-style: normal;
 }  
 .firstpage{
-    width: screen;
-    height: screen;
-    display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    width: 100vw;
+    height: 100vh;
 }
 .navigationBar{
     width: 95vw;
@@ -80,30 +79,6 @@ body{
     margin-right: 10px;
     font-weight: bold;
 }
-.gym{
-    grid-column-start: 9;
-    grid-column-end: 11;
-    grid-row-start: 8;
-    grid-row-end: 10;
-}
-.study{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 8;
-    grid-row-end: 10;
-}
-.progress{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-.reading{
-    grid-column-start: 9;
-    grid-column-end: 11;
-    grid-row-start: 3;
-    grid-row-end: 5 ;
-}
 .content{
     width: 100%;
     height: 100%;
@@ -139,17 +114,222 @@ h1{
     width: fit-content;
     margin: 0 auto;
 }
+.midsec{
+    height: 13vh;
+    width: 100vw;
+}
 .secondpage{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
-@media (max-width: 1100px){
-    body{
-        background-color: rgb(15, 10, 1);
-        margin: 0;
-        padding: 0;
-        background-image: none;
-    }
+.upper{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    z-index: 15;
+}
+.one{
+    height: 100%;
+    width: 50%;
+}
+.two{
+    height: 100%;
+    width: 50%;
+}
+.lower{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    z-index: 15;
+}
+.three{
+    height: 100%;
+    width: 50%;
+}
+.four{
+    height: 100%;
+    width: 50%;
+}
+p{
+    margin: auto;
+    width: fit-content;
+    font-weight: bold;
+    max-width: 80%;
+}
+.weight{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 5%;
+    background-color: white;
+}
+.name1{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.desc1{
+    height: 50%;
+    width: 100%;
+    border-radius: 5%;
+    align-content: center;
+}
+.link1{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.reading{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 5%;
+    background-color: white;
+}
+.name2{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.desc2{
+    height: 50%;
+    width: 100%;
+    border-radius: 5%;
+    align-content: center;
+}
+.link2{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.academics{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5%;
+    background-color: white;
+}
+.name3{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.desc3{
+    height: 50%;
+    width: 100%;
+    border-radius: 5%;
+    align-content: center;
+}
+.link3{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.progress{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5%;
+    background-color: white;
+}
+.name4{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.desc4{
+    height: 50%;
+    width: 100%;
+    border-radius: 5%;
+    align-content: center;
+}
+.link4{
+    height: 25%;
+    width: 100%;
+    background-color: #c0c0c0;
+    border-radius: 5%;
+    align-content: center;
+}
+.linkk{
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    border: none;
+    background-color: #32bbff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 35%;
+}
+.footer{
+    height: 20vh;
+    width: 100vw;
+    border-top: #32bbff 2px solid;
+    background-color: rgb(1, 10, 1);
+    display: flex;
+    color: whitesmoke;
+}
+.madeby{
+    width: 50%;
+    height: 100%;
+    align-content: center;
+    z-index: 15;
+}
+.github{
+    width: 50%;
+    height: 100%;
+    z-index: 15;
+}
+img{
+    height: 5vh;
+    margin-right: 20px;
+    text-align: center;
+}
+a{
+    color: whitesmoke;
+}
+.repo{
+    margin-top: 6%;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:  rgb(15, 10, 1)   ;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c0c0c0;
+    border-radius: 20px;
 }
 @media (max-width: 1024px) {
     body{
@@ -165,23 +345,44 @@ h1{
         align-content: center;
     }
     .LogIn {
-        height: 30px;
-        width: 45px;
-        border-radius: 5px;
-        border: none;
-        background-color: rgb(255, 255, 255);
-        cursor: pointer;
+        height: 38px;
+        width: 95px;
+        font-size: 20px;
     }
     .SignUp {
-        height: 30px;
-        width: 55px;
-        border-radius: 5px;
-        border: none;
-        background-color: #32bbff;
-        cursor: pointer;
+        height: 38px;
+        width: 95px;
+        font-size: 20px;
+    }
+    .one{
+        margin: auto;
+    }
+    .two{
+        margin: auto;
+    }
+    .three{
+        margin: auto;
+    }
+    .four{
+        margin: auto;
+    }
+    .upper{
+        flex-direction: column;
+    }
+    .lower{
+        flex-direction: column;
+    }
+    .linkk{
+        margin-left: 32%;
+    }
+    img{
+        height: 3vh;
+    }
+    .repo {
+        margin-top: 21%;
     }
 }
-@media (max-width: 541px) {
+@media (max-width: 540px) {
     body{
         background-color: rgb(15, 10, 1);
         margin: 0;
@@ -197,18 +398,40 @@ h1{
     .LogIn {
         height: 30px;
         width: 45px;
-        border-radius: 5px;
-        border: none;
-        background-color: rgb(255, 255, 255);
-        cursor: pointer;
+        font-size: 12px;
     }
     .SignUp {
         height: 30px;
         width: 55px;
-        border-radius: 5px;
-        border: none;
-        background-color: #32bbff;
-        cursor: pointer;
+        font-size: 12px;
+    }
+    .weight{
+        width: 100%;
+    }
+    .progress{
+        width: 100%;
+    }
+    .academics{
+        width: 100%;
+    }
+    .reading{
+        width: 100%;
+    }
+    p{
+        font-size: 10px;
+    }
+    .linkk {
+        height: 20px;
+        width: 80px;
+        font-size: 10px;
+        margin-left: 35%;
+    }
+    img{
+        height: 3vh;
+        margin-right: 10px;
+    }
+    .repo {
+        margin-top: 22%;
     }
 }
 @media (max-width: 440px){
@@ -219,17 +442,22 @@ h1{
         align-content: center;
         color: #69cdff;
         width: fit-content;
-        font-size: 15px;
+        font-size: 16px;
     }
     h1{
-        font-size: 40px;
+        font-size: 50px;
     }
-}
-.upper{
-    height: 50vh;
-    width: 100vw;
-}
-.lower{
-    height: 50vh;
-    width: 100vw;
+    .linkk {
+        height: 20px;
+        width: 80px;
+        font-size: 10px;
+        margin-left: 27%;
+    }
+    img{
+        height: 2vh;
+        margin-right: 10px;
+    }
+    .repo {
+        margin-top: 39%;
+    }
 }
